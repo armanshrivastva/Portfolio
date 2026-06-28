@@ -1587,3 +1587,56 @@ border-color .3s;
 footer{
     background:#fafafa;
 }
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+    color:#111;
+}
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:block;
+        z-index:1001;
+    }
+
+    .nav-links{
+
+        position:fixed;
+
+        top:0;
+        right:-100%;
+
+        width:280px;
+        height:100vh;
+
+        background:#ffffff;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        gap:35px;
+
+        transition:.4s ease;
+
+        box-shadow:-10px 0 30px rgba(0,0,0,.1);
+
+        z-index:1000;
+    }
+
+    .nav-links.active{
+
+        right:0;
+
+    }
+
+    .nav-links a{
+
+        font-size:22px;
+
+    }
+
+}
