@@ -302,3 +302,23 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Portfolio Loaded Successfully");
 
 });
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+
+    navLinks.classList.toggle("active");
+
+    if(navLinks.classList.contains("active")){
+
+        menuToggle.innerHTML =
+        '<i class="fas fa-times"></i>';
+
+    }else{
+
+        menuToggle.innerHTML =
+        '<i class="fas fa-bars"></i>';
+
+    }
+
+});
