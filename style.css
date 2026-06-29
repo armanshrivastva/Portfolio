@@ -492,9 +492,8 @@ header{
 
 .skill-card{
 
-    background:#fafafa;
 
-    border:1px solid #ececec;
+  
 
     border-radius:28px;
 
@@ -508,9 +507,22 @@ header{
 
     cursor:pointer;
 
-    transition:.45s;
 
     box-shadow:0 15px 40px rgba(0,0,0,.04);
+
+    background: #1b1b1b;
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card h3{
+    color: #ffffff;
+}
+
+.skill-card p{
+    color: #cfcfcf;
+}
 
 }
 
